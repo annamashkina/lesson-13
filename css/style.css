@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.square {
+    fill: rgb(209, 152, 86);
+    stroke: rgb(102, 35, 8);
+    stroke-width: 5px;
+}
+
+.rectangle {
+    fill: green;
+    stroke: rgb(166, 212, 104);
+    stroke-width: 5px;
+}
+
+.circle {
+    fill: rgb(218, 110, 110);
+    stroke: red;
+    stroke-width: 5px;
+}
+
+.ellipse {
+    fill: yellow;
+    stroke: green;
+    stroke-width: 5px;
+    animation: changeColor 5s infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        fill: yellow;
+        stroke: green;
+    }
+    50% {
+        fill: orange;
+        stroke: purple;
+    }
+    100% {
+        fill: yellow;
+        stroke: green;
+    }
+}
